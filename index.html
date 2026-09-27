@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060b08">
+  <meta name="description" content="一个关于思考、笔记与创造的私人角落。选择由你。">
+  <title>选择由你 · The choice is yours</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23060b08'/%3E%3Cpath d='M7 8h5v16H7m18-16h-5v16h5' fill='none' stroke='%2384bd94' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <main id="choice" class="choice">
+    <div class="choice-inner">
+      <p class="eyebrow">A MOMENT. A CHOICE.</p>
+      <h1><span lang="en">The choice is yours.</span><span class="choice-cn">选择由你</span></h1>
+      <div class="pills">
+        <a class="pill-option red-option" href="#home" aria-label="红色药丸：进入主页 / Enter"><span class="pill red" aria-hidden="true"></span><span class="pill-caption">进入真实 <span lang="en">ENTER</span></span></a>
+        <a class="pill-option blue-option" href="#blue" aria-label="蓝色药丸：进入代码雨与音乐 / Stay"><span class="pill blue" aria-hidden="true"></span><span class="pill-caption">留在梦境 <span lang="en">STAY</span></span></a>
+      </div>
+    </div>
+    <span class="entry-footer">FOLLOW YOUR OWN PATH.</span>
+  </main>
+  <div id="journal" class="journal" hidden>
+    <header class="banner"><img src="banner.jpg" alt="墨绿色光影中的电脑桌与深夜工作的人" width="1000" height="288"></header>
+    <div class="journal-layout">
+      <aside>
+        <a class="identity" href="#home">矩阵空间<span lang="en">The Matrix</span></a>
+        <nav aria-label="主导航">
+          <a href="#home" data-page="home"><span>首页</span><small>HOME</small></a>
+          <a href="#notes" data-page="notes"><span>笔记</span><small>NOTES</small></a>
+          <a href="#projects" data-page="projects"><span>项目</span><small>PROJECTS</small></a>
+          <a href="#contact" data-page="contact"><span>联系</span><small>CONTACT</small></a>
+        </nav>
+        <a class="back-choice" href="#choice">重新选择 <span aria-hidden="true">↗</span><small class="bilingual-caption" lang="en">CHOOSE AGAIN</small></a>
+      </aside>
+      <main id="content" tabindex="-1"></main>
+    </div>
+    <footer class="journal-footer"><span>独立记录，自由思考。</span><span>STAY CURIOUS. STAY AWAKE.</span></footer>
+  </div>
+</body>
+</html>
